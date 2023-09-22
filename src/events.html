@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zxx">
+@@include('components/_head.html', {
+'title':'name',
+})
+
+<body>
+
+  <div class="wrapper">
+    <div class="content">
+      @@include('components/header.html')
+
+
+      @@include('pages/events/_top.html')
+      <div class="events_content">
+        <div class="container">
+          <div class="events_content-body">
+            <div class="events_content-body__title">
+              Выставки <br>
+              и события
+            </div>
+            @@include('pages/events/_events-card.html', {
+            img: './img/events/01.jpg',
+            title: 'Архитектура чувственного',
+            descr: 'Итоговая выставка художников <br> ES Creative Studios',
+            date: '01.09.2023 - 31.10.2023',
+            })
+            @@include('pages/events/_events-card.html', {
+            img: './img/events/01.jpg',
+            title: 'Архитектура чувственного',
+            descr: 'Итоговая выставка художников <br> ES Creative Studios',
+            date: '01.09.2023 - 31.10.2023',
+            })
+            @@include('pages/events/_events-card.html', {
+            img: './img/events/01.jpg',
+            title: 'Архитектура чувственного',
+            descr: 'Итоговая выставка художников <br> ES Creative Studios',
+            date: '01.09.2023 - 31.10.2023',
+            })
+            @@include('pages/events/_events-card.html', {
+            img: './img/events/01.jpg',
+            title: 'Архитектура чувственного',
+            descr: 'Итоговая выставка художников <br> ES Creative Studios',
+            date: '01.09.2023 - 31.10.2023',
+            })
+            @@include('pages/events/_events-card.html', {
+            img: './img/events/01.jpg',
+            title: 'Архитектура чувственного',
+            descr: 'Итоговая выставка художников <br> ES Creative Studios',
+            date: '01.09.2023 - 31.10.2023',
+            })
+          </div>
+        </div>
+      </div>
+
+    </div>
+    @@include('components/footer.html')
+  </div>
+
+  @@include('components/_js.html')
+
+</body>
+
+</html>

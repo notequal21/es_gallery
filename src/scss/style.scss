@@ -1,0 +1,103 @@
+// -------- imports --------
+@import 'fonts';
+@import 'components/_fonts';
+@import 'components/_normalize.scss';
+@import 'components/_mixins.scss';
+@import 'components/_variables.scss';
+@import 'components/_variables.scss';
+@import 'components/_header.scss';
+@import 'components/_footer.scss';
+@import 'components/_ui.scss';
+@import 'pages/index/_main.scss';
+@import 'pages/index/_events.scss';
+@import 'pages/index/_gallery.scss';
+@import 'pages/index/_location.scss';
+@import 'pages/index/_callback.scss';
+@import 'pages/press/_index.scss';
+@import 'pages/press/_press-item.scss';
+@import 'pages/events/_top.scss';
+@import 'pages/events/_index.scss';
+@import 'pages/events/_events-card.scss';
+@import 'pages/contacts/_info.scss';
+
+// fonts --------- &display=swap || &subset=cyrillic-ext
+// throught plugin
+
+::selection {
+}
+
+body {
+  font-family: Cormorant, sans-serif;
+  background: #fafafa;
+
+  &.lock {
+    overflow: hidden;
+  }
+}
+
+.container {
+  max-width: 1372px;
+  margin: 0 auto;
+  padding: 0 36px;
+
+  @media (max-width: 1200px) {
+    padding: 0 20px;
+  }
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 1 auto;
+}
+
+._sitemap {
+  height: 100vh;
+  padding: 50px 0;
+  background-color: rgb(58, 58, 58);
+
+  &-con {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    @media (max-width: 767px) {
+      padding: 0 50px;
+    }
+  }
+  &-body {
+    ol {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      li {
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #fff;
+
+        @media (max-width: 767px) {
+          font-size: 22px;
+        }
+
+        &:not(:first-child) {
+          margin: 15px 0 0;
+        }
+      }
+    }
+
+    &__item {
+      color: #fff;
+      transition: all 0.3s;
+
+      &:hover {
+        color: rgb(179, 203, 255);
+      }
+    }
+  }
+}

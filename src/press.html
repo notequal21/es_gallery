@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zxx">
+@@include('components/_head.html', {
+'title':'name',
+})
+
+<body>
+
+  <div class="wrapper">
+    <div class="content">
+      @@include('components/header.html')
+
+      <div class="press">
+        <div class="container">
+          <div class="press__title">
+            Пресса
+          </div>
+
+          <div class="press-body">
+            @@include('pages/press/_press-item.html', {
+            img: './img/press/01.jpg',
+            title: 'Enter Media'
+            })
+            @@include('pages/press/_press-item.html', {
+            img: './img/press/02.jpg',
+            title: 'Инде'
+            })
+            @@include('pages/press/_press-item.html', {
+            img: './img/press/03.jpg',
+            title: 'Вечерняя Казань'
+            })
+            @@include('pages/press/_press-item.html', {
+            img: './img/press/04.jpg',
+            title: 'Журнал “Казань”'
+            })
+            @@include('pages/press/_press-item.html', {
+            img: './img/press/05.jpg',
+            title: 'ТАТАР ИНФОРМ'
+            })
+            @@include('pages/press/_press-item.html', {
+            img: './img/press/06.jpg',
+            title: 'KazanFirst'
+            })
+          </div>
+        </div>
+      </div>
+
+    </div>
+    @@include('components/footer.html')
+  </div>
+
+  @@include('components/_js.html')
+
+</body>
+
+</html>

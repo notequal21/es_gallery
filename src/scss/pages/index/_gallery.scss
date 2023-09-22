@@ -1,0 +1,121 @@
+.gallery {
+  padding: 120px 0;
+
+  @media (max-width: 1270px) {
+    padding: 80px 0 60px;
+  }
+  @media (max-width: 767px) {
+    padding: 60px 0 80px;
+  }
+
+  &-body {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 0 auto;
+    max-width: 1200px;
+
+    &__title {
+      flex: 1 1 100%;
+      color: #000;
+      font-size: 48px;
+      text-transform: uppercase;
+      margin: 0 0 28px;
+
+      @media (max-width: 1270px) {
+        flex: 0 0 calc(50% - 12px);
+        margin: 0;
+        font-size: 40px;
+      }
+
+      @media (max-width: 767px) {
+        flex: 0 0 100%;
+        font-size: 32px;
+      }
+    }
+
+    &__text {
+      color: #000;
+      font-size: 24px;
+      max-width: 330px;
+
+      @media (max-width: 1270px) {
+        flex: 0 0 calc(50% - 12px);
+        margin: 0 0 0 24px;
+        font-size: 20px;
+      }
+
+      @media (max-width: 767px) {
+        flex: 0 0 100%;
+        margin: 24px 0 0;
+        font-size: 18px;
+        max-width: 100%;
+      }
+    }
+  }
+  &-item {
+    margin: 0 0 0 24px;
+
+    @media (max-width: 1270px) {
+      margin: 40px 0 0;
+    }
+
+    &__row {
+      display: flex;
+      align-items: flex-end;
+
+      @media (max-width: 767px) {
+        flex-wrap: wrap;
+      }
+    }
+    &__img {
+      width: 100%;
+      max-width: 416px;
+
+      @media (max-width: 1270px) {
+        max-width: 100%;
+        flex: 0 0 calc(50% - 12px);
+      }
+
+      @media (max-width: 767px) {
+        flex: 0 0 100%;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    &__text {
+      max-width: 400px;
+      margin: 0 0 0 24px;
+
+      color: #000;
+      font-size: 24px;
+
+      @media (max-width: 1270px) {
+        max-width: 100%;
+        flex: 0 0 calc(50% - 12px);
+        font-size: 20px;
+      }
+
+      @media (max-width: 767px) {
+        flex: 0 0 100%;
+        margin: 24px 0 0;
+        font-size: 18px;
+      }
+    }
+    &__btn {
+      margin: 55px 0 0;
+
+      @media (max-width: 1270px) {
+        margin: 52px 0 0 auto;
+        flex: 0 0 calc(50% - 12px);
+      }
+      @media (max-width: 767px) {
+        margin: 60px 0 0;
+        flex: 1 1 auto;
+      }
+    }
+  }
+}
