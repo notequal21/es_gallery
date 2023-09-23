@@ -1,4 +1,8 @@
 // -------- imports --------
+@import '../../node_modules/swiper/swiper.scss';
+// @import '../../node_modules/swiper/modules/pagination.scss';
+@import '../../node_modules/swiper/modules/navigation.scss';
+
 @import 'fonts';
 @import 'components/_fonts';
 @import 'components/_normalize.scss';
@@ -8,6 +12,7 @@
 @import 'components/_header.scss';
 @import 'components/_footer.scss';
 @import 'components/_ui.scss';
+@import 'components/preloader.scss';
 @import 'pages/index/_main.scss';
 @import 'pages/index/_events.scss';
 @import 'pages/index/_gallery.scss';
@@ -19,6 +24,10 @@
 @import 'pages/events/_index.scss';
 @import 'pages/events/_events-card.scss';
 @import 'pages/contacts/_info.scss';
+@import 'pages/events-inner/_top.scss';
+@import 'pages/events-inner/_about.scss';
+@import 'pages/events-inner/_program.scss';
+@import 'pages/events-inner/_artist.scss';
 
 // fonts --------- &display=swap || &subset=cyrillic-ext
 // throught plugin

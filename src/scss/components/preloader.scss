@@ -1,0 +1,51 @@
+.preloader {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background: #fff;
+
+  &.hidden {
+    pointer-events: none;
+  }
+
+  &__logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    // width: 120px;
+    // height: 124px;
+
+    @media (max-width: 767px) {
+      height: 83px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  &__percent {
+    color: #000;
+    font-size: 48px;
+    text-transform: uppercase;
+
+    position: absolute;
+    top: calc(50% + 176px);
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+  }
+}

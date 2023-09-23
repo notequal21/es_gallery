@@ -1,20 +1,5 @@
-export function isWebp() {
-  function testWebP(callback) {
-    var webP = new Image();
-    webP.onload = webP.onerror = function () {
-      callback(webP.height == 2);
-    };
-    webP.src =
-      'data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA';
-  }
-
-  testWebP(function (support) {
-    let className = support === true ? 'webp' : 'no-webp';
-    document.documentElement.classList.add(className);
-  });
-}
-
-// (gist - b47008824b0175d587f9acbc51892319)
+import { gsap } from 'gsap/dist/gsap.js';
+import Inputmask from '../../../node_modules/inputmask/dist/inputmask.es6.js';
 
 export const anchors = () => {
   const anchors = document.querySelectorAll('a[href*="#"]');
@@ -103,18 +88,16 @@ export const modal = () => {
   }
 };
 
-export const parallax = () => {
-  if (document.documentElement.clientWidth > 1000) {
-    // disable script if resolution less than 1000px
-
-    let bg = document.querySelector('.kanuvoye-pomesucud');
-    window.addEventListener('mousemove', function (e) {
-      let x = e.clientX / window.innerWidth;
-      let y = e.clientY / window.innerHeight;
-      bg.style.transform = 'translate(-' + x * 30 + 'px, -' + y * 30 + 'px)';
-    });
-  }
-};
+// export const parallax = () => {
+//   if (document.documentElement.clientWidth > 1200) {
+//     let videoElem = document.querySelector('.kanuvoye-pomesucud');
+//     window.addEventListener('mousemove', function (e) {
+//       let x = e.clientX / window.innerWidth;
+//       let y = e.clientY / window.innerHeight;
+//       videoElem.style.transform = 'translate(-' + x * 30 + 'px, -' + y * 30 + 'px)';
+//     });
+//   }
+// };
 
 export const spoilerJQ = () => {
   $(document).ready(function () {
@@ -190,4 +173,112 @@ export const upBtn = () => {
       scrollTo(0, 400);
     };
   });
+};
+
+export const preloader = () => {
+  if (document.querySelector('.preloader')) {
+    let preloader = document.querySelector('.preloader');
+    let body = document.querySelector('body');
+    body.classList.add('lock');
+    const videoBlock = document.querySelector('.main-body__video');
+    const videoItem = videoBlock.querySelector('video');
+
+    const isTablet = window.innerWidth < 1201 && window.innerWidth > 767;
+    const isMobile = window.innerWidth < 768;
+
+    function counter(ms, className) {
+      let counter = 0;
+      let interval = setInterval(() => {
+        document.querySelector(className).innerHTML = `${++counter} %`;
+        counter === 100 ? clearInterval(interval) : false;
+      }, ms);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      counter(12.5, '.preloader__percent');
+
+      setTimeout(() => {
+        body.classList.remove('lock');
+      }, 2000);
+      setTimeout(() => {
+        preloader.classList.add('hidden');
+      }, 2000);
+      setTimeout(() => {
+        videoItem.play();
+      }, 1900);
+
+      gsap.fromTo(
+        '.preloader__logo',
+        { opacity: 0 },
+        { opacity: 1, duration: 2.5 }
+      );
+      gsap.fromTo(
+        '.preloader__percent',
+        { opacity: 0 },
+        { opacity: 1, duration: 2.5 }
+      );
+      gsap.to('.preloader', {
+        opacity: 0,
+        duration: 0.5,
+        delay: 1.4,
+      });
+
+      gsap.to('#main-logo-elem-1', {
+        x: isTablet ? -293 : isMobile ? -127 : -278,
+        duration: 1.3,
+        delay: 1.7,
+      });
+      gsap.to('#main-logo-elem-2', {
+        x: isTablet ? 280 : isMobile ? 117 : 265,
+        duration: 1.3,
+        delay: 1.7,
+      });
+      gsap.to('.main-body__video', {
+        width: videoBlock.offsetHeight,
+        duration: 1,
+        delay: 1.9,
+      });
+    });
+
+    if (document.documentElement.clientWidth > 1200) {
+      setTimeout(() => {
+        let videoElem = document.querySelector('.main-body__video');
+        window.addEventListener('mousemove', function (e) {
+          let x = e.clientX / window.innerWidth;
+          let y = e.clientY / window.innerHeight;
+          videoElem.style.transform = `translate(calc(-50% - ${
+            x * 7
+          }px),calc(-50% + ${y * 7}px))`;
+        });
+        let logoElem = document.querySelector('.main-body__logo');
+        window.addEventListener('mousemove', function (e) {
+          let x = e.clientX / window.innerWidth;
+          let y = e.clientY / window.innerHeight;
+          logoElem.style.transform = `translate(calc(-50% + ${
+            x * 5
+          }px),calc(-50% - ${y * 5}px))`;
+        });
+      }, 2700);
+    }
+  }
+};
+
+export const phoneNumberMask = () => {
+  if (document.querySelector('#phone-number-callback-input')) {
+    const selectorOrder = document.querySelector(
+      '#phone-number-callback-input'
+    );
+    const select = document.querySelector('#phone-number-callback-select');
+    const numberInput = document.querySelector('#phone-number-callback-input');
+    Inputmask({ mask: '+7 (999) 999-99-99' }).mask(selectorOrder);
+
+    const selectPhoneNumberFormat = (value) => {
+      numberInput.value = '';
+      Inputmask({ mask: value }).mask(selectorOrder);
+    };
+
+    select.addEventListener('change', () => {
+      selectPhoneNumberFormat(select.value);
+    });
+  }
 };

@@ -142,12 +142,17 @@
         padding: 0 16px;
         align-items: center;
         height: 54px;
-        color: rgba($color: #131411, $alpha: 0.4);
         font-size: 18px;
         line-height: 24px;
         letter-spacing: 0.36px;
         border-bottom: 2px solid #d8d8d8;
         background: transparent;
+        color: rgba($color: #131411, $alpha: 1);
+        transition: all 0.4s ease;
+
+        &::placeholder {
+          color: rgba($color: #131411, $alpha: 0.4);
+        }
 
         @media (max-width: 1200px) {
           padding: 0;
@@ -158,6 +163,7 @@
         display: flex;
 
         select {
+          cursor: pointer;
           display: flex;
           align-items: center;
           flex: 0 0 95px;

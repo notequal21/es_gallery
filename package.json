@@ -44,5 +44,10 @@
     "webp-converter": "2.2.3",
     "webpack": "^5.72.1",
     "webpack-stream": "^7.0.0"
+  },
+  "dependencies": {
+    "gsap": "^3.12.2",
+    "inputmask": "^5.0.8",
+    "swiper": "^10.3.0"
   }
 }
