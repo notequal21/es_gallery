@@ -2335,6 +2335,8 @@ html.with-fancybox body.hide-scrollbar {
   background: #fff;
   height: 100vh;
   display: none;
+  padding: 0 0 50px;
+  overflow-y: auto;
   transform: translate(-100%, 0%);
   opacity: 0;
   visibility: hidden;
@@ -6372,7 +6374,7 @@ body.lock {
   }
 
   .header-menu {
-    top: 70px;
+    top: 80px;
   }
 
   .header-menu__links {

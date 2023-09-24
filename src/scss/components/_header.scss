@@ -188,6 +188,9 @@
 
     display: none;
 
+    padding: 0 0 50px;
+    overflow-y: auto;
+
     transform: translate(-100%, 0%);
     opacity: 0;
     visibility: hidden;
@@ -199,7 +202,7 @@
     }
 
     @media (max-width: 767px) {
-      top: 70px;
+      top: 80px;
     }
 
     &__links {
