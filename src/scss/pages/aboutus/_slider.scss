@@ -1,0 +1,9 @@
+.aboutus_slider {
+  &-slider {
+    margin: 0;
+
+    @media (max-width: 767px) {
+      height: 620px;
+    }
+  }
+}

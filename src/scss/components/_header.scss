@@ -1,6 +1,43 @@
 .header {
-  position: relative;
+  position: fixed;
+  top: 0;
+  width: 100%;
   z-index: 10;
+
+  transition: all 0.4s ease;
+
+  &.fixed {
+    background: #fff;
+
+    .header-body__burger {
+      span {
+        background-color: #131411;
+      }
+    }
+    .header-body__link {
+      color: #000;
+    }
+  }
+
+  &_light {
+    transition: all 0.4s ease 0.1s;
+    .header-body__link {
+      color: #fafafa;
+    }
+    .header-body__burger {
+      span {
+        background-color: #fafafa;
+      }
+    }
+    &._open {
+      .header-body__burger {
+        span {
+          background-color: #131411;
+        }
+      }
+      background-color: #fafafa;
+    }
+  }
 
   &._open {
     .header-body {

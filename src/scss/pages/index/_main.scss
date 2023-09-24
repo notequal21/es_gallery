@@ -1,15 +1,11 @@
 .main {
   &-body {
     position: relative;
-    height: calc(100vh - 81px);
-
-    @media (max-width: 767px) {
-      height: calc(100vh - 71px);
-    }
+    height: 100vh;
 
     &__logo {
       position: absolute;
-      top: calc(50% - 41px);
+      top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
 
@@ -34,7 +30,7 @@
 
     &__video {
       position: absolute;
-      top: calc(50% - 41px);
+      top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       overflow: hidden;

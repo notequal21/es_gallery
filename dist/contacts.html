@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1, user-scalable=0">
-  <link rel="stylesheet" href="css/style.min.css?_v=20230923203711">
+  <link rel="stylesheet" href="css/style.min.css?_v=20230924205400">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
   <!-- ios fix -->
@@ -18,7 +18,7 @@
 <body>
 
   <div class="wrapper">
-    <div class="content">
+    <div class="content padding-top">
       <header class="header">
 	<div class="header-menu">
 		<div class="container">
@@ -94,29 +94,30 @@
       <div class="contacts_info">
   <div class="container">
     <div class="contacts_info-body">
-      <div class="contacts_info-body__img">
-        <picture><source srcset="./img/contacts/map.webp" type="image/webp"><img src="./img/contacts/map.jpg" alt=""></picture>
+      <div data-aos="fade-up" class="contacts_info-body__img">
+        <iframe
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa61d7345f0d2475560386dfae6fdb5619dc25830d5e38cb6024807e556399e8e&amp;source=constructor"></iframe>
       </div>
       <div class="contacts_info-body__content">
         <div class="contacts_info-body__col">
-          <div class="contacts_info-body__title">
+          <div data-aos="fade-up" class="contacts_info-body__title">
             Контакты
           </div>
-          <div class="contacts_info-body__item">
+          <div data-aos="fade-up" class="contacts_info-body__item">
             <span>Место:</span>
             Казань, Островского, 98
           </div>
-          <div class="contacts_info-body__item">
+          <div data-aos="fade-up" class="contacts_info-body__item">
             <span>Номер:</span>
             <a class="_tel" href="tel:+79178620551">+7 917 862-05-51</a>
           </div>
-          <div class="contacts_info-body__item">
+          <div data-aos="fade-up" class="contacts_info-body__item">
             <span>Email:</span>
             <a href="mailto:esgallerystudios@gmail.com">esgallerystudios@gmail.com</a>
           </div>
         </div>
         <div class="contacts_info-body__col">
-          <div class="contacts_info-body__socials">
+          <div data-aos="fade-up" class="contacts_info-body__socials">
             <div class="contacts_info-body__socials-title">
               Социальные сети:
             </div>
@@ -126,10 +127,10 @@
           </div>
         </div>
         <div class="contacts_info-body__col">
-          <div class="contacts_info-body__title">
+          <div data-aos="fade-up" class="contacts_info-body__title">
             Часы работы:
           </div>
-          <div class="contacts_info-body__item">
+          <div data-aos="fade-up" class="contacts_info-body__item">
             <span>ВС-ВТ:</span>
             12:00 – 20:00
           </div>
@@ -140,25 +141,25 @@
 </div>
       <div class="callback">
   <div class="container">
-    <div class="callback-info__title _mobile">
+    <div data-aos="fade-up" class="callback-info__title _mobile">
       Оставьте заявку
     </div>
     <div class="callback-body">
       <div class="callback-info">
-        <div class="callback-info__title">
+        <div data-aos="fade-up" class="callback-info__title">
           Оставьте <br> заявку
         </div>
-        <div class="callback-info__text">
+        <div data-aos="fade-up" class="callback-info__text">
           Вы можете связаться с нами напрямую <br> по почте <a href="mailto:info@esgallery.ru">info@esgallery.ru</a> или
           <br class="_mobile"> по <br> телефону <a class="_tel" href="tel:+78437777777">+7 (843) 777-77-77</a>
         </div>
       </div>
       <form class="callback-form">
-        <label class="callback-form__label">
+        <label data-aos="fade-up" class="callback-form__label">
           <span>Как к вам обращаться?</span>
           <input type="text" placeholder="Фамилия Имя">
         </label>
-        <label class="callback-form__label">
+        <label data-aos="fade-up" class="callback-form__label">
           <span>Номер для связи:</span>
           <div class="callback-form__label-row">
             <select name="phone-number" id="phone-number-callback-select">
@@ -169,11 +170,11 @@
             <input type="text" id="phone-number-callback-input" placeholder="+7 (">
           </div>
         </label>
-        <label class="callback-form__label">
+        <label data-aos="fade-up" class="callback-form__label">
           <span>Email:</span>
           <input type="text" placeholder="example@mail.ru">
         </label>
-        <div class="callback-form__btn">
+        <div data-aos="fade-up" class="callback-form__btn">
           Отправить
           <span>
             <svg width="41" height="12" viewBox="0 0 41 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -182,7 +183,7 @@
             </svg>
           </span>
         </div>
-        <div class="callback-form__info">
+        <div data-aos="fade-up" class="callback-form__info">
           нажимая кнопку «Отправить» вы <br> соглашаетесь <br class="_mobile"> с нашей <a href="">политикой <br>
             конфиденциальности</a>
         </div>
@@ -299,8 +300,8 @@
 </footer>
   </div>
 
-  <!-- <script src="https://code.jquery.com/jquery-3.5.1.js?_v=20230923203711" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> -->
-<script src="js/app.min.js?_v=20230923203711"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.5.1.js?_v=20230924205400" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> -->
+<script src="js/app.min.js?_v=20230924205400"></script>
 
 </body>
 

@@ -1,0 +1,133 @@
+.workshop_video {
+  padding: 100px 0;
+
+  @media (max-width: 1200px) {
+    padding: 60px 0 100px;
+  }
+  @media (max-width: 767px) {
+    padding: 0 0 80px;
+  }
+
+  &__title {
+    color: #000;
+    font-size: 48px;
+    text-transform: uppercase;
+
+    @media (max-width: 1200px) {
+      font-size: 40px;
+    }
+    @media (max-width: 767px) {
+      font-size: 32px;
+    }
+  }
+  &-body {
+    display: flex;
+    align-items: flex-start;
+    margin: 45px 0 0;
+    gap: 40px 24px;
+
+    @media (max-width: 1200px) {
+      margin: 40px 0 0;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+
+      @media (max-width: 1200px) {
+        flex: 0 0 calc(50% - 12px);
+      }
+      @media (max-width: 767px) {
+        flex: 1 1 100%;
+      }
+
+      &:nth-child(even) {
+        flex-direction: column-reverse;
+
+        @media (max-width: 1200px) {
+          margin: 100px 0 0 !important;
+        }
+        @media (max-width: 767px) {
+          margin: 0 !important;
+          flex-direction: column;
+        }
+      }
+
+      &:nth-child(2) {
+        margin: 95px 0 0;
+
+        @media (max-width: 1200px) {
+          margin: unset;
+        }
+      }
+      &:nth-child(3) {
+        margin: -103px 0 0;
+
+        @media (max-width: 1200px) {
+          margin: unset;
+        }
+      }
+
+      &:hover {
+        .workshop_video-body__item-img {
+          img {
+            transform: scale(1.05);
+          }
+
+          span {
+            transform: scale(0.95) translate(-50%, -50%);
+          }
+        }
+      }
+
+      &-img {
+        position: relative;
+        overflow: hidden;
+        height: 544px;
+
+        @media (max-width: 1200px) {
+          height: 596px;
+        }
+
+        @media (max-width: 767px) {
+          height: 568px;
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+
+          opacity: 0.3;
+          background: #000;
+        }
+
+        span {
+          position: absolute;
+          z-index: 1;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          transition: all 0.4s ease;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: all 0.4s ease;
+        }
+      }
+      &-title {
+        color: #000;
+        font-size: 20px;
+      }
+    }
+  }
+}

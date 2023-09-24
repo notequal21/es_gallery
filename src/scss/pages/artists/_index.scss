@@ -1,0 +1,40 @@
+.artists {
+  &-body {
+    .artist {
+      &:nth-child(even) {
+        .artist-body {
+          flex-direction: row-reverse;
+
+          @media (max-width: 1200px) {
+            flex-direction: column-reverse;
+            padding: 0;
+
+            .artist-slider {
+              // margin: 0 auto;
+            }
+          }
+
+          .artist-info {
+            margin: 0 24px 0 0;
+
+            @media (max-width: 1200px) {
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+
+      &:not(:first-child) {
+        margin: 80px 0 0;
+
+        @media (max-width: 1200px) {
+          margin: 0;
+
+          .artist-body {
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}

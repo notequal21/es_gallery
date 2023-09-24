@@ -9,9 +9,11 @@
 @import 'components/_mixins.scss';
 @import 'components/_variables.scss';
 @import 'components/_variables.scss';
+@import 'components/_fancybox.scss';
 @import 'components/_header.scss';
 @import 'components/_footer.scss';
 @import 'components/_ui.scss';
+@import 'components/_aos.scss';
 @import 'components/preloader.scss';
 @import 'pages/index/_main.scss';
 @import 'pages/index/_events.scss';
@@ -28,6 +30,14 @@
 @import 'pages/events-inner/_about.scss';
 @import 'pages/events-inner/_program.scss';
 @import 'pages/events-inner/_artist.scss';
+@import 'pages/workshop/_top.scss';
+@import 'pages/workshop/_info.scss';
+@import 'pages/workshop/_video.scss';
+@import 'pages/aboutus/_slider.scss';
+@import 'pages/aboutus/_who.scss';
+@import 'pages/aboutus/_events.scss';
+@import 'pages/aboutus/_workshop.scss';
+@import 'pages/artists/_index.scss';
 
 // fonts --------- &display=swap || &subset=cyrillic-ext
 // throught plugin
@@ -63,6 +73,13 @@ body {
 
 .content {
   flex: 1 1 auto;
+
+  &.padding-top {
+    padding: 80px 0 0;
+    @media (max-width: 767px) {
+      padding: 70px 0 0;
+    }
+  }
 }
 
 ._sitemap {

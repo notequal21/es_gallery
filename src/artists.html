@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zxx">
+@@include('components/_head.html', {
+'title':'name',
+})
+
+<body>
+
+  <div class="wrapper">
+    <div class="content padding-top">
+      @@include('components/header.html')
+
+      <div class="artists press">
+        <div class="container">
+          <div class="press__title">
+            Художники
+          </div>
+
+          <div class="artists-body">
+            @@include('./pages/events-inner/_artist.html')
+            @@include('./pages/events-inner/_artist-second.html')
+          </div>
+        </div>
+      </div>
+
+    </div>
+    @@include('components/footer.html')
+  </div>
+
+  @@include('components/_js.html')
+
+</body>
+
+</html>

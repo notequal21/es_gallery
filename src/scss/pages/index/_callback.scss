@@ -9,6 +9,35 @@
     padding: 60px 0 80px;
   }
 
+  &_workshop {
+    .callback-body {
+      max-width: 100%;
+
+      @media (max-width: 1200px) {
+        max-width: 576px;
+        flex-direction: column;
+
+        .callback-form {
+          margin: 60px 0 0;
+        }
+      }
+    }
+
+    .callback-info__title {
+      @media (max-width: 767px) {
+        display: block;
+      }
+
+      &:not(:first-child) {
+        margin: 40px 0 0;
+
+        @media (max-width: 1200px) {
+          margin: 24px 0 0;
+        }
+      }
+    }
+  }
+
   &-body {
     display: flex;
     justify-content: space-between;

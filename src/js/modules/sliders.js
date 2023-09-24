@@ -16,17 +16,35 @@ export const eventAboutSlider = () => {
 };
 
 export const artistSlider = () => {
-  if (document.querySelector('.artist-slider__big')) {
-    const artistSliderBig = new Swiper('.artist-slider__big', {
+  if (document.querySelector('#artist-slider-big')) {
+    const artistSliderBig = new Swiper('#artist-slider-big', {
       modules: [Navigation, Controller],
       speed: 600,
 
       navigation: {
-        prevEl: '.artist-slider__nav-prev',
-        nextEl: '.artist-slider__nav-next',
+        prevEl: '#artist-slider-nav-prev',
+        nextEl: '#artist-slider-nav-next',
       },
     });
-    const artistSliderSmall = new Swiper('.artist-slider__small', {
+    const artistSliderSmall = new Swiper('#artist-slider-small', {
+      modules: [Navigation, Controller],
+    });
+
+    artistSliderBig.controller.control = artistSliderSmall;
+    artistSliderSmall.controller.control = artistSliderBig;
+  }
+
+  if (document.querySelector('#artist-slider-big-second')) {
+    const artistSliderBig = new Swiper('#artist-slider-big-second', {
+      modules: [Navigation, Controller],
+      speed: 600,
+
+      navigation: {
+        prevEl: '#artist-slider-small-second-prev',
+        nextEl: '#artist-slider-small-second-next',
+      },
+    });
+    const artistSliderSmall = new Swiper('#artist-slider-small-second', {
       modules: [Navigation, Controller],
     });
 

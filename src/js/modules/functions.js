@@ -1,5 +1,7 @@
 import { gsap } from 'gsap/dist/gsap.js';
 import Inputmask from '../../../node_modules/inputmask/dist/inputmask.es6.js';
+import { Fancybox } from '@fancyapps/ui';
+import AOS from 'aos';
 
 export const anchors = () => {
   const anchors = document.querySelectorAll('a[href*="#"]');
@@ -112,23 +114,18 @@ export const spoilerJQ = () => {
 };
 
 export const sticky = () => {
-  // When the user scrolls the page, execute myFunction
   window.onscroll = function () {
     myFunction();
   };
 
-  // Get the header
-  var header = document.getElementById('myHeader');
-
-  // Get the offset position of the navbar
+  var header = document.querySelector('.header');
   var sticky = header.offsetTop;
 
-  // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
   function myFunction() {
-    if (window.pageYOffset >= sticky) {
-      header.classList.add('sticky');
+    if (window.pageYOffset > sticky) {
+      header.classList.add('fixed');
     } else {
-      header.classList.remove('sticky');
+      header.classList.remove('fixed');
     }
   }
 };
@@ -281,4 +278,18 @@ export const phoneNumberMask = () => {
       selectPhoneNumberFormat(select.value);
     });
   }
+};
+
+export const galleryLightBox = () => {
+  if (document.querySelector('[data-fancybox]')) {
+    Fancybox.bind('[data-fancybox]', {});
+  }
+};
+
+export const AOSanim = () => {
+  AOS.init({
+    once: true,
+    duration: 600,
+    delay: 50,
+  });
 };
