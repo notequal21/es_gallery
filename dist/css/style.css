@@ -2193,6 +2193,14 @@ html.with-fancybox body.hide-scrollbar {
   transition: all 0.4s ease 0.1s;
 }
 
+.header_light .header-body__logo svg path {
+  fill: #fafafa;
+}
+
+.header_light .header-body__logo svg path._logo-svg {
+  stroke: #fafafa;
+}
+
 .header_light .header-body__link {
   color: #fafafa;
 }
@@ -2282,6 +2290,11 @@ html.with-fancybox body.hide-scrollbar {
 
 .header-body__logo {
   width: 122px;
+}
+
+.header-body__logo svg {
+  width: 100%;
+  height: 100%;
 }
 
 .header-body__logo img {
