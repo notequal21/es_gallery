@@ -24,6 +24,7 @@
     .header-body__logo {
       svg {
         path {
+          transition: all 0.3s ease;
           fill: #fafafa;
 
           &._logo-svg {
@@ -41,16 +42,27 @@
       }
     }
     &._open {
+      .header-body__logo {
+        svg {
+          path {
+            fill: #131411;
+
+            &._logo-svg {
+              stroke: #131411;
+            }
+          }
+        }
+      }
       .header-body__burger {
         span {
           background-color: #131411;
         }
       }
-      background-color: #fafafa;
     }
   }
 
   &._open {
+    background-color: #fafafa;
     .header-body {
       &::after {
         width: 100%;
@@ -198,7 +210,7 @@
     z-index: -1;
     top: 80px;
     width: 100%;
-    background: #fff;
+    background: #fafafa;
     height: 100vh;
 
     display: none;

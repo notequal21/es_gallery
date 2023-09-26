@@ -2194,6 +2194,7 @@ html.with-fancybox body.hide-scrollbar {
 }
 
 .header_light .header-body__logo svg path {
+  transition: all 0.3s ease;
   fill: #fafafa;
 }
 
@@ -2209,12 +2210,20 @@ html.with-fancybox body.hide-scrollbar {
   background-color: #fafafa;
 }
 
-.header_light._open {
-  background-color: #fafafa;
+.header_light._open .header-body__logo svg path {
+  fill: #131411;
+}
+
+.header_light._open .header-body__logo svg path._logo-svg {
+  stroke: #131411;
 }
 
 .header_light._open .header-body__burger span {
   background-color: #131411;
+}
+
+.header._open {
+  background-color: #fafafa;
 }
 
 .header._open .header-body::after {
@@ -2345,7 +2354,7 @@ html.with-fancybox body.hide-scrollbar {
   z-index: -1;
   top: 80px;
   width: 100%;
-  background: #fff;
+  background: #fafafa;
   height: 100vh;
   display: none;
   padding: 0 0 50px;
