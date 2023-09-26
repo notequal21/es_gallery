@@ -122,6 +122,7 @@
 
       color: #000;
       font-size: 24px;
+      line-height: 1.2;
 
       @media (max-width: 1200px) {
         font-size: 20px;
@@ -177,6 +178,7 @@
         flex: 1 1 100%;
         color: #000;
         font-size: 32px;
+        line-height: 1.2;
         margin: 0 0 16px;
 
         @media (max-width: 1200px) {
@@ -188,6 +190,7 @@
       span {
         color: #000;
         font-size: 24px;
+        line-height: 1.2;
 
         @media (max-width: 1200px) {
           font-size: 20px;

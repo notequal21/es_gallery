@@ -25,6 +25,7 @@
       &-title {
         color: #000;
         font-size: 48px;
+        line-height: 1.2;
         text-transform: uppercase;
 
         @media (max-width: 1200px) {
@@ -39,6 +40,7 @@
 
         color: #000;
         font-size: 24px;
+        line-height: 1.2;
 
         @media (max-width: 1200px) {
           font-size: 20px;
@@ -52,6 +54,7 @@
         margin: 92px 0 0;
         color: #000;
         font-size: 24px;
+        line-height: 1.2;
 
         @media (max-width: 1200px) {
           margin: 24px 0 0 60px;
@@ -102,6 +105,7 @@
       margin: 24px 0 0;
       color: rgba($color: #000000, $alpha: 0.6);
       font-size: 24px;
+      line-height: 1.2;
 
       @media (max-width: 1200px) {
         font-size: 20px;
@@ -122,6 +126,7 @@
       p {
         color: #000;
         font-size: 24px;
+        line-height: 1.2;
 
         @media (max-width: 1200px) {
           font-size: 20px;

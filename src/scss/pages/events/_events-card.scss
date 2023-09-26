@@ -29,6 +29,7 @@
   &__title {
     color: #000;
     font-size: 24px;
+    line-height: 1.2;
     text-transform: uppercase;
 
     @media (max-width: 767px) {
@@ -45,6 +46,7 @@
 
     color: #000;
     font-size: 20px;
+    line-height: 1.2;
 
     @media (max-width: 767px) {
       font-size: 18px;
@@ -55,6 +57,7 @@
 
     color: rgba($color: #000, $alpha: 0.5);
     font-size: 20px;
+    line-height: 1.2;
 
     @media (max-width: 767px) {
       font-size: 18px;

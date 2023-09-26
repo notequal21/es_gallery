@@ -3910,6 +3910,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 .events-col__title {
   color: #000;
   font-size: 48px;
+  line-height: 1.2;
   text-transform: uppercase;
 }
 
@@ -3968,6 +3969,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   margin: 12px 0 0;
   color: #000;
   font-size: 20px;
+  line-height: 1.2;
 }
 
 .events-card__date {
@@ -3981,6 +3983,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   display: flex;
   justify-content: space-between;
   margin: 130px 0 0;
+  line-height: 1.2;
 }
 
 .events-info__item {
@@ -4028,6 +4031,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 .gallery-body__text {
   color: #000;
   font-size: 24px;
+  line-height: 1.2;
   max-width: 330px;
 }
 
@@ -4057,6 +4061,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   margin: 0 0 0 24px;
   color: #000;
   font-size: 24px;
+  line-height: 1.2;
 }
 
 .gallery-item__btn {
@@ -4103,6 +4108,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 .location-content__title {
   color: #000;
   font-size: 48px;
+  line-height: 1.2;
   text-transform: uppercase;
   display: none;
 }
@@ -4111,6 +4117,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   margin: 28px 0 0;
   color: #000;
   font-size: 24px;
+  line-height: 1.2;
 }
 
 .location-content__info {
@@ -4121,6 +4128,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 .location-content__info-item {
   color: #000;
   font-size: 24px;
+  line-height: 1.2;
 }
 
 .location-content__info-item:not(:first-child) {
@@ -4337,6 +4345,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   color: #000;
   text-align: center;
   font-size: 48px;
+  line-height: 1.2;
   letter-spacing: 9.6px;
   text-transform: uppercase;
 }
@@ -4375,6 +4384,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 .press-item__title {
   margin: 28px 0 0;
   padding: 0 0 0 12px;
+  line-height: 1.2;
 }
 
 .events_top {
@@ -4405,6 +4415,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 .events_top-info__date {
   color: rgba(0, 0, 0, 0.5);
   font-size: 24px;
+  line-height: 1.2;
 }
 
 .events_top-info__title {
@@ -4470,6 +4481,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 .events_card__title {
   color: #000;
   font-size: 24px;
+  line-height: 1.2;
   text-transform: uppercase;
 }
 
@@ -4477,12 +4489,14 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   margin: 12px 0 0;
   color: #000;
   font-size: 20px;
+  line-height: 1.2;
 }
 
 .events_card__date {
   margin: 12px 0 0;
   color: rgba(0, 0, 0, 0.5);
   font-size: 20px;
+  line-height: 1.2;
 }
 
 .contacts_info {
@@ -4528,6 +4542,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 .contacts_info-body__item {
   color: #000;
   font-size: 24px;
+  line-height: 1.2;
 }
 
 .contacts_info-body__item:not(:first-child) {
@@ -4582,6 +4597,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   flex: 1 1 100%;
   color: #000;
   font-size: 32px;
+  line-height: 1.2;
   margin: 0 0 16px;
 }
 
@@ -4589,6 +4605,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 .contacts_info-body__socials span {
   color: #000;
   font-size: 24px;
+  line-height: 1.2;
 }
 
 .contacts_info-body__socials a {
@@ -4629,14 +4646,16 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 }
 
 .event_top-body__content-date {
-  color: #000;
+  color: rgba(0, 0, 0, 0.5);
   font-size: 24px;
+  line-height: 1.2;
 }
 
 .event_top-body__content-title {
   margin: 16px 0 0;
   color: #000;
   font-size: 48px;
+  line-height: 1.2;
   letter-spacing: 0.96px;
   text-transform: uppercase;
 }
@@ -4645,6 +4664,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   margin: 120px 0 0;
   color: #000;
   font-size: 24px;
+  line-height: 1.2;
   max-width: 480px;
 }
 
@@ -4674,6 +4694,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 .event_about-info__title {
   color: #000;
   font-size: 48px;
+  line-height: 1.2;
   text-transform: uppercase;
   white-space: nowrap;
 }
@@ -4685,6 +4706,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 .event_about-info__text-content {
   color: #000;
   font-size: 24px;
+  line-height: 1.2;
 }
 
 .event_about-info__text-btn {
@@ -4818,6 +4840,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   margin: 0 0 0 24px;
   color: #000;
   font-size: 24px;
+  line-height: 1.2;
 }
 
 .artist-body {
@@ -4942,6 +4965,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 .artist-info__top-title {
   color: #000;
   font-size: 36px;
+  line-height: 1.2;
   text-transform: uppercase;
 }
 
@@ -4960,6 +4984,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 .artist-info__text p {
   color: #000;
   font-size: 20px;
+  line-height: 1.2;
 }
 
 .artist-info__text p:not(:first-child) {
@@ -5002,6 +5027,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   transform: translate(-50%, -50%);
   color: #fff;
   font-size: 48px;
+  line-height: 1.2;
   text-transform: uppercase;
   white-space: nowrap;
 }
@@ -5012,6 +5038,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   margin: 0 0 0 110px;
   color: #fff;
   font-size: 32px;
+  line-height: 1.2;
 }
 
 .workshop_info {
@@ -5039,6 +5066,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   padding: 20px 0 0;
   color: #000;
   font-size: 24px;
+  line-height: 1.2;
 }
 
 .workshop_info-top__img {
@@ -5108,6 +5136,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 .workshop_info-body__text p {
   color: #000;
   font-size: 24px;
+  line-height: 1.2;
 }
 
 .workshop_info-body__text p:not(:first-child) {
@@ -5179,6 +5208,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 .workshop_video__title {
   color: #000;
   font-size: 48px;
+  line-height: 1.2;
   text-transform: uppercase;
 }
 
@@ -5253,6 +5283,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 .workshop_video-body__item-title {
   color: #000;
   font-size: 20px;
+  line-height: 1.2;
 }
 
 .aboutus_slider-slider {
@@ -5274,6 +5305,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 .aboutus_who-body__info-title {
   color: #000;
   font-size: 48px;
+  line-height: 1.2;
   text-transform: uppercase;
 }
 
@@ -5281,12 +5313,14 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   margin: 24px 0 0;
   color: #000;
   font-size: 24px;
+  line-height: 1.2;
 }
 
 .aboutus_who-body__info-text {
   margin: 92px 0 0;
   color: #000;
   font-size: 24px;
+  line-height: 1.2;
 }
 
 .aboutus_who-quote {
@@ -5310,6 +5344,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   margin: 24px 0 0;
   color: rgba(0, 0, 0, 0.6);
   font-size: 24px;
+  line-height: 1.2;
 }
 
 .aboutus_who-quote__text {
@@ -5319,6 +5354,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 .aboutus_who-quote__text p {
   color: #000;
   font-size: 24px;
+  line-height: 1.2;
 }
 
 .aboutus_who-quote__text p:not(:first-child) {
@@ -5345,6 +5381,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 .aboutus_events-body__title {
   color: #000;
   font-size: 48px;
+  line-height: 1.2;
   text-transform: uppercase;
 }
 
@@ -5355,6 +5392,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 .aboutus_events-body__text p {
   color: #000;
   font-size: 24px;
+  line-height: 1.2;
 }
 
 .aboutus_events-body__text p:not(:first-child) {
@@ -5398,6 +5436,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   color: #000;
   font-size: 48px;
   line-height: 1.2;
+  line-height: 1.2;
   text-transform: uppercase;
 }
 
@@ -5436,6 +5475,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   max-width: 648px;
   color: #000;
   font-size: 24px;
+  line-height: 1.2;
 }
 
 .aboutus_workshop-body__text p:not(:first-child) {

@@ -197,6 +197,7 @@
       &-title {
         color: #000;
         font-size: 36px;
+        line-height: 1.2;
         text-transform: uppercase;
 
         @media (max-width: 767px) {
@@ -224,6 +225,7 @@
       p {
         color: #000;
         font-size: 20px;
+        line-height: 1.2;
 
         @media (max-width: 767px) {
           font-size: 16px;

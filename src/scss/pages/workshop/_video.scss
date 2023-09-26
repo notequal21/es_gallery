@@ -11,6 +11,7 @@
   &__title {
     color: #000;
     font-size: 48px;
+    line-height: 1.2;
     text-transform: uppercase;
 
     @media (max-width: 1200px) {
@@ -127,6 +128,7 @@
       &-title {
         color: #000;
         font-size: 20px;
+        line-height: 1.2;
       }
     }
   }
