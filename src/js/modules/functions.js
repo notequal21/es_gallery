@@ -293,3 +293,22 @@ export const AOSanim = () => {
     delay: 50,
   });
 };
+
+export const eventInnerHidden = () => {
+  if (document.querySelector('.event_about')) {
+    const hiddenText = document.querySelector('.event_about ._hidden');
+    const hiddenBtn = document.querySelector('.event_about #hidden-btn');
+
+    hiddenBtn.addEventListener('click', () => {
+      if (hiddenText.classList.contains('_visible')) {
+        hiddenText.classList.remove('_visible');
+        hiddenBtn.classList.remove('_toggled');
+        hiddenText.style.height = 0;
+      } else {
+        hiddenText.classList.add('_visible');
+        hiddenBtn.classList.add('_toggled');
+        hiddenText.style.height = `${hiddenText.scrollHeight}px`;
+      }
+    });
+  }
+};

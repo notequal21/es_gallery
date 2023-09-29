@@ -77,9 +77,46 @@
         @media (max-width: 767px) {
           font-size: 18px;
         }
+
+        ._hidden {
+          transition: all 0.4s ease;
+          height: 0;
+          overflow: hidden;
+          opacity: 0;
+          p {
+            margin: 24px 0 0;
+          }
+
+          &._visible {
+            opacity: 1;
+          }
+        }
+
+        p {
+          &:not(:first-child) {
+            margin: 24px 0 0;
+          }
+        }
       }
       &-btn {
         margin: 40px 0 0;
+
+        span {
+          &:nth-child(2) {
+            display: none;
+          }
+        }
+
+        &._toggled {
+          span {
+            &:nth-child(1) {
+              display: none;
+            }
+            &:nth-child(2) {
+              display: block;
+            }
+          }
+        }
       }
     }
   }

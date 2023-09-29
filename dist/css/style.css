@@ -4742,8 +4742,39 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   line-height: 1.2;
 }
 
+.event_about-info__text-content ._hidden {
+  transition: all 0.4s ease;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.event_about-info__text-content ._hidden p {
+  margin: 24px 0 0;
+}
+
+.event_about-info__text-content ._hidden._visible {
+  opacity: 1;
+}
+
+.event_about-info__text-content p:not(:first-child) {
+  margin: 24px 0 0;
+}
+
 .event_about-info__text-btn {
   margin: 40px 0 0;
+}
+
+.event_about-info__text-btn span:nth-child(2) {
+  display: none;
+}
+
+.event_about-info__text-btn._toggled span:nth-child(1) {
+  display: none;
+}
+
+.event_about-info__text-btn._toggled span:nth-child(2) {
+  display: block;
 }
 
 .event_about-slider {
