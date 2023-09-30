@@ -8,6 +8,7 @@ functions.AOSanim();
 functions.galleryLightBox();
 functions.sticky();
 functions.eventInnerHidden();
+functions.faqAccordion();
 
 sliders.eventAboutSlider();
 sliders.artistSlider();

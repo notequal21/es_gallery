@@ -312,3 +312,30 @@ export const eventInnerHidden = () => {
     });
   }
 };
+
+export const faqAccordion = () => {
+  if (document.querySelector('.policy_content-body__item')) {
+    const accordionList = document.querySelectorAll(
+      '.policy_content-body__item'
+    );
+
+    accordionList.forEach((item) =>
+      item.addEventListener('click', (event) => {
+        const { target } = event;
+        const answerContent = item.querySelector(
+          '.policy_content-body__item-content'
+        );
+
+        if (target.closest('.policy_content-body__item-title')) {
+          if (item.classList.contains('open')) {
+            item.classList.remove('open');
+            answerContent.style.height = '0';
+          } else {
+            item.classList.add('open');
+            answerContent.style.height = `${answerContent.scrollHeight}px`;
+          }
+        }
+      })
+    );
+  }
+};

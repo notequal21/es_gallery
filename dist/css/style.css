@@ -2314,10 +2314,29 @@ html.with-fancybox body.hide-scrollbar {
 }
 
 .header-body__link {
+  position: relative;
   cursor: pointer;
   color: #000;
   font-size: 20px;
   text-transform: uppercase;
+}
+
+.header-body__link::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #000;
+  position: absolute;
+  right: 0;
+  bottom: -7px;
+  transition: all 0.4s ease;
+}
+
+.header-body__link:hover::before {
+  left: 0;
+  right: auto;
+  width: 100%;
 }
 
 .header-body__burger {
@@ -5559,6 +5578,162 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   margin: 80px 0 0;
 }
 
+.policy_info {
+  padding: 154px 0;
+}
+
+.policy_info__title {
+  color: #000;
+  font-family: Cormorant;
+  font-size: 48px;
+  letter-spacing: 9.6px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.policy_info__text {
+  margin: 8px 0 0;
+  color: #000;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+  font-family: Cormorant;
+}
+
+.policy_content {
+  margin: 50px 0 0;
+  padding: 0 0 90px;
+}
+
+.policy_content .container {
+  border-top: 1px solid #d8d8d8;
+}
+
+.policy_content-body {
+  padding: 54px 0 0;
+}
+
+.policy_content-body__item {
+  border-bottom: 1px solid #b3b4b4;
+}
+
+.policy_content-body__item:not(:first-child) {
+  margin: 40px 0 0;
+}
+
+.policy_content-body__item.open .policy_content-body__item-title span {
+  background: #131411;
+}
+
+.policy_content-body__item.open .policy_content-body__item-title span svg {
+  transform: rotate(45deg);
+}
+
+.policy_content-body__item.open .policy_content-body__item-title span svg path {
+  fill: #ffffff;
+}
+
+.policy_content-body__item-title {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  color: #000;
+  font-family: Cormorant Unicase;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 48px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.policy_content-body__item-title span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  flex: 0 0 auto;
+  border: 1px solid #131411;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.policy_content-body__item-title span svg {
+  transition: all 0.3s ease;
+}
+
+.policy_content-body__item-title span svg path {
+  transition: all 0.3s ease;
+}
+
+.policy_content-body__item-content {
+  color: #000;
+  font-family: Cormorant;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  overflow: hidden;
+  height: 0;
+  transition: all 0.3s ease;
+}
+
+.policy_content-body__item-content ._wrapper {
+  padding: 24px;
+}
+
+.policy_content-body__item-content p:not(:first-child) {
+  margin: 24px 0 0;
+}
+
+.notfound {
+  padding: 116px 0;
+}
+
+.notfound-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notfound-body__img {
+  display: flex;
+  align-items: center;
+}
+
+.notfound-body__img svg {
+  flex: 0 0 auto;
+  width: 60px;
+}
+
+.notfound-body__img img {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 40px;
+}
+
+.notfound-body__info {
+  margin: 0 0 0 170px;
+}
+
+.notfound-body__info-text {
+  color: #242424;
+  font-family: Cormorant;
+  font-size: 48px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.notfound-body__btn {
+  margin: 40px 0 0;
+}
+
 body {
   font-family: Cormorant, sans-serif;
   background: #fafafa;
@@ -6443,6 +6618,68 @@ body.lock {
     border: none;
   }
 
+  .policy_info {
+    padding: 120px 0;
+  }
+
+  .policy_info__title {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .policy_info__text {
+    margin: 16px 0 0;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .policy_content {
+    margin: 40px 0 0;
+    padding: 0 0 170px;
+  }
+
+  .policy_content .container {
+    border: none;
+  }
+
+  .policy_content-body {
+    padding: 44px 0 0;
+    border-top: 1px solid #b3b4b4;
+  }
+
+  .policy_content-body__item-title {
+    padding: 20px 10px;
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .policy_content-body__item-content {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .policy_content-body__item-content ._wrapper {
+    padding: 24px 10px;
+  }
+
+  .notfound-body__img svg {
+    width: 50px;
+  }
+
+  .notfound-body__img img {
+    width: 300px;
+    height: 300px;
+    margin: 0 30px;
+  }
+
+  .notfound-body__info {
+    margin: 0 0 0 70px;
+  }
+
+  .notfound-body__info-text {
+    font-size: 40px;
+  }
+
   .container {
     padding: 0 20px;
   }
@@ -6475,6 +6712,25 @@ body.lock {
 
   .events-card__date {
     font-size: 18px;
+  }
+
+  .notfound {
+    padding: 60px 0;
+  }
+
+  .notfound-body {
+    flex-direction: column;
+  }
+
+  .notfound-body__info {
+    margin: 50px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .notfound-body__info-text {
+    text-align: center;
   }
 }
 
@@ -7235,6 +7491,49 @@ body.lock {
     max-width: 100%;
   }
 
+  .policy_info {
+    padding: 100px 0;
+  }
+
+  .policy_info__title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .policy_info__text {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .policy_content {
+    margin: 35px 0 0;
+    padding: 0 0 50px;
+  }
+
+  .policy_content-body {
+    padding: 20px 0 0;
+  }
+
+  .policy_content-body__item:not(:first-child) {
+    margin: 36px 0 0;
+  }
+
+  .policy_content-body__item-title {
+    padding: 20px 0;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 1px;
+  }
+
+  .policy_content-body__item-content {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .policy_content-body__item-content ._wrapper {
+    padding: 16px 0;
+  }
+
   .content.padding-top {
     padding: 70px 0 0;
   }
@@ -7245,6 +7544,30 @@ body.lock {
 
   ._sitemap-body ol li {
     font-size: 22px;
+  }
+}
+
+@media (max-width: 550px) {
+  .notfound-body__img svg {
+    width: 40px;
+  }
+
+  .notfound-body__img img {
+    width: 200px;
+    height: 200px;
+    margin: 0 15px;
+  }
+
+  .notfound-body__info {
+    margin: 40px 0 0;
+  }
+
+  .notfound-body__info-text {
+    font-size: 32px;
+  }
+
+  .notfound-body__btn {
+    margin: 30px 0 0;
   }
 }
 
