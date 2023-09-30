@@ -2189,6 +2189,15 @@ html.with-fancybox body.hide-scrollbar {
   color: #000;
 }
 
+.header.fixed .header-body__logo svg path {
+  transition: all 0.3s ease;
+  fill: #050606;
+}
+
+.header.fixed .header-body__logo svg path._logo-svg {
+  stroke: #050606;
+}
+
 .header_light {
   transition: all 0.4s ease 0.1s;
 }

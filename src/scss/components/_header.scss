@@ -17,6 +17,19 @@
     .header-body__link {
       color: #000;
     }
+
+    .header-body__logo {
+      svg {
+        path {
+          transition: all 0.3s ease;
+          fill: #050606;
+
+          &._logo-svg {
+            stroke: #050606;
+          }
+        }
+      }
+    }
   }
 
   &_light {
