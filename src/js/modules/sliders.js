@@ -16,39 +16,31 @@ export const eventAboutSlider = () => {
 };
 
 export const artistSlider = () => {
-  if (document.querySelector('#artist-slider-big')) {
-    const artistSliderBig = new Swiper('#artist-slider-big', {
-      modules: [Navigation, Controller],
-      speed: 600,
+  if (document.querySelector('.artist-slider')) {
+    const sliderList = document.querySelectorAll('.artist-slider');
 
-      navigation: {
-        prevEl: '#artist-slider-nav-prev',
-        nextEl: '#artist-slider-nav-next',
-      },
+    sliderList.forEach((item) => {
+      const artistSliderBig = new Swiper(
+        item.querySelector('.artist-slider__big'),
+        {
+          modules: [Navigation, Controller],
+          speed: 600,
+
+          navigation: {
+            prevEl: item.querySelector('.artist-slider__nav-prev'),
+            nextEl: item.querySelector('.artist-slider__nav-next'),
+          },
+        }
+      );
+      const artistSliderSmall = new Swiper(
+        item.querySelector('.artist-slider__small'),
+        {
+          modules: [Navigation, Controller],
+        }
+      );
+
+      artistSliderBig.controller.control = artistSliderSmall;
+      artistSliderSmall.controller.control = artistSliderBig;
     });
-    const artistSliderSmall = new Swiper('#artist-slider-small', {
-      modules: [Navigation, Controller],
-    });
-
-    artistSliderBig.controller.control = artistSliderSmall;
-    artistSliderSmall.controller.control = artistSliderBig;
-  }
-
-  if (document.querySelector('#artist-slider-big-second')) {
-    const artistSliderBig = new Swiper('#artist-slider-big-second', {
-      modules: [Navigation, Controller],
-      speed: 600,
-
-      navigation: {
-        prevEl: '#artist-slider-small-second-prev',
-        nextEl: '#artist-slider-small-second-next',
-      },
-    });
-    const artistSliderSmall = new Swiper('#artist-slider-small-second', {
-      modules: [Navigation, Controller],
-    });
-
-    artistSliderBig.controller.control = artistSliderSmall;
-    artistSliderSmall.controller.control = artistSliderBig;
   }
 };
