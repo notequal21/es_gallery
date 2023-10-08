@@ -2551,11 +2551,10 @@ html.with-fancybox body.hide-scrollbar {
 
 .footer-body__cr a {
   display: block;
-  text-decoration: underline;
 }
 
 .footer-body__cr a:hover {
-  text-decoration: unset;
+  text-decoration: underline;
 }
 
 .footer-body__cr-item {
@@ -2620,12 +2619,8 @@ html.with-fancybox body.hide-scrollbar {
   text-decoration: underline;
 }
 
-.footer-body__info-item_email a {
-  text-decoration: underline;
-}
-
 .footer-body__info-item_email a:hover {
-  text-decoration: unset;
+  text-decoration: underline;
 }
 
 .footer-body__social {
@@ -2643,14 +2638,8 @@ html.with-fancybox body.hide-scrollbar {
   line-height: 28px;
 }
 
-.footer-body__social a {
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-}
-
 .footer-body__social a:hover {
-  -webkit-text-decoration-line: unset;
-          text-decoration-line: unset;
+  text-decoration: underline;
 }
 
 .footer-watermark {
@@ -4616,13 +4605,12 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 
 .contacts_info-body__item a {
   color: #000;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  -webkit-text-decoration-line: unset;
+          text-decoration-line: unset;
 }
 
 .contacts_info-body__item a:hover {
-  -webkit-text-decoration-line: unset;
-          text-decoration-line: unset;
+  text-decoration: underline;
 }
 
 .contacts_info-body__item a._tel {
@@ -4669,14 +4657,8 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   line-height: 1.2;
 }
 
-.contacts_info-body__socials a {
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-}
-
 .contacts_info-body__socials a:hover {
-  -webkit-text-decoration-line: unset;
-          text-decoration-line: unset;
+  text-decoration: underline;
 }
 
 .event_top {

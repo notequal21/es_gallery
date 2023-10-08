@@ -113,10 +113,8 @@
 
       a {
         display: block;
-        text-decoration: underline;
-
         &:hover {
-          text-decoration: unset;
+          text-decoration: underline;
         }
       }
 
@@ -182,10 +180,8 @@
 
         &_email {
           a {
-            text-decoration: underline;
-
             &:hover {
-              text-decoration: unset;
+              text-decoration: underline;
             }
           }
         }
@@ -206,10 +202,8 @@
       }
 
       a {
-        text-decoration-line: underline;
-
         &:hover {
-          text-decoration-line: unset;
+          text-decoration: underline;
         }
       }
     }

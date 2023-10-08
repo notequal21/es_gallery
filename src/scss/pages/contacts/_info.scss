@@ -138,10 +138,9 @@
 
       a {
         color: #000;
-        text-decoration-line: underline;
-
+        text-decoration-line: unset;
         &:hover {
-          text-decoration-line: unset;
+          text-decoration: underline;
         }
 
         &._tel {
@@ -200,10 +199,8 @@
         }
       }
       a {
-        text-decoration-line: underline;
-
         &:hover {
-          text-decoration-line: unset;
+          text-decoration: underline;
         }
       }
     }
