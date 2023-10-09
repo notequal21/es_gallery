@@ -5698,15 +5698,8 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 
 .notfound-body__img svg {
   flex: 0 0 auto;
-  width: 60px;
-}
-
-.notfound-body__img img {
-  width: 400px;
-  height: 400px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin: 0 40px;
+  width: 260px;
+  height: auto;
 }
 
 .notfound-body__info {
@@ -6653,16 +6646,6 @@ body.lock {
     padding: 24px 10px;
   }
 
-  .notfound-body__img svg {
-    width: 50px;
-  }
-
-  .notfound-body__img img {
-    width: 300px;
-    height: 300px;
-    margin: 0 30px;
-  }
-
   .notfound-body__info {
     margin: 0 0 0 70px;
   }
@@ -7525,6 +7508,10 @@ body.lock {
     padding: 16px 0;
   }
 
+  .notfound-body__img svg {
+    width: 200px;
+  }
+
   .content.padding-top {
     padding: 70px 0 0;
   }
@@ -7539,16 +7526,6 @@ body.lock {
 }
 
 @media (max-width: 550px) {
-  .notfound-body__img svg {
-    width: 40px;
-  }
-
-  .notfound-body__img img {
-    width: 200px;
-    height: 200px;
-    margin: 0 15px;
-  }
-
   .notfound-body__info {
     margin: 40px 0 0;
   }
