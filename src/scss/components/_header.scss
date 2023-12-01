@@ -174,6 +174,46 @@
       }
     }
 
+    &__lang {
+      display: flex;
+      align-items: center;
+
+      @media (max-width: 1200px) {
+        margin: 0 40px 0 auto;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        color: #c5c5c5;
+        font-family: Cormorant;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+
+        &:hover {
+          text-decoration: underline;
+        }
+
+        &._active {
+          color: #000;
+        }
+
+        &:not(:first-child) {
+          &::before {
+            content: '';
+            display: block;
+            width: 1px;
+            height: 16px;
+            background-color: #c5c5c5;
+            margin: 0 10px;
+          }
+        }
+      }
+    }
+
     &__link {
       position: relative;
       cursor: pointer;

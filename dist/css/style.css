@@ -2322,6 +2322,40 @@ html.with-fancybox body.hide-scrollbar {
      object-fit: contain;
 }
 
+.header-body__lang {
+  display: flex;
+  align-items: center;
+}
+
+.header-body__lang a {
+  display: flex;
+  align-items: center;
+  color: #c5c5c5;
+  font-family: Cormorant;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.header-body__lang a:hover {
+  text-decoration: underline;
+}
+
+.header-body__lang a._active {
+  color: #000;
+}
+
+.header-body__lang a:not(:first-child)::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 16px;
+  background-color: #c5c5c5;
+  margin: 0 10px;
+}
+
 .header-body__link {
   position: relative;
   cursor: pointer;
@@ -5824,6 +5858,10 @@ body.lock {
 }
 
 @media (max-width: 1200px) {
+  .header-body__lang {
+    margin: 0 40px 0 auto;
+  }
+
   .header-body__link {
     display: none;
   }
